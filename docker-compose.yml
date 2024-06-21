@@ -1,0 +1,43 @@
+services:
+  dbt-postgres:
+    build:
+      context: ./dbt_db
+      dockerfile: Dockerfile
+    container_name: dbt-postgres
+    ports:
+      - 5455:5432    
+    expose:
+      - 5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - PGDATA=/data/postgres
+    volumes:
+       - postgres:/data/postgres      
+    networks:
+      - postgres
+    restart: unless-stopped
+
+  dbt-pgadmin:
+    image: dpage/pgadmin4:8.8
+    container_name: dbt-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin_password
+    ports:
+      - "5050:80"
+    networks:
+      - postgres
+    volumes:
+       - pgadmin:/var/lib/pgadmin
+    restart: unless-stopped
+    depends_on:
+      - dbt-postgres       
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+    postgres:  
+    pgadmin:

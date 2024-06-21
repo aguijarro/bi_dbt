@@ -1,0 +1,29 @@
+[0m21:44:49.121057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e71bf874760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e71bddd5120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e71bddd50c0>]}
+
+
+============================== 21:44:49.123993 | 25ea3fe0-d85c-4304-a04f-ec4ef1bb61f0 ==============================
+[0m21:44:49.123993 [info ] [MainThread]: Running with dbt=1.8.3
+[0m21:44:49.124745 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/aguijarro/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:45:26.043071 [debug] [MainThread]: Starter project path: /home/aguijarro/Documents/Clases/Unibe/BusinessIntelligence-Noche/proyecto/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m21:45:26.059458 [info ] [MainThread]: 
+Your new dbt project "adventure_works" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:45:26.063191 [info ] [MainThread]: Setting up your profile.
+[0m21:47:08.122369 [info ] [MainThread]: Profile adventure_works written to /home/aguijarro/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:47:08.124983 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 139.05937, "process_user_time": 1.491885, "process_kernel_time": 0.083545, "process_mem_max_rss": "94268", "process_in_blocks": "6432", "process_out_blocks": "88"}
+[0m21:47:08.126136 [debug] [MainThread]: Command `dbt init` succeeded at 21:47:08.125952 after 139.06 seconds
+[0m21:47:08.126943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e71bf874760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e71bdcecca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e71bddd5540>]}
+[0m21:47:08.127715 [debug] [MainThread]: Flushing usage events
