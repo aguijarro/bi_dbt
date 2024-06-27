@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: adventure_works_ds
+    schema: person
+    database: Adventureworks
+
+    tables:
+      - name: address
+        identifier: address
